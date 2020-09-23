@@ -165,7 +165,7 @@ public class RichPreview {
             URI base_uri = null;
             try {
                 base_uri = new URI(url);
-            } catch (URISyntaxException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             base_uri = base_uri.resolve(part);
